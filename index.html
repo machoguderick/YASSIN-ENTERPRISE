@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YASSIN ENTERPRISE | Campus Living Essentials</title>
+    <title>YASSIN FURNITURE AND HOUSE HOLD SUPPLY | Premium Home & Living Essentials</title>
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,33 +39,62 @@
             --input-border: rgba(255, 255, 255, 0.30);
             --section-divider: rgba(0, 0, 0, 0.04);
             --testimonial-bg: rgba(255, 255, 255, 0.45);
+            --primary: #991B1B;
+            --primary-dark: #7F1D1D;
+            --primary-light: #FCA5A5;
+            --secondary: #D97706;
+            --whatsapp-green: #10B981;
+            --whatsapp-dark: #059669;
         }
 
-        /* Dark theme — system preference */
+        /* ================================================================
+               DARK THEME — LIGHT BLUE COLOR SCHEME
+               ================================================================ */
         @media (prefers-color-scheme: dark) {
             :root {
-                --bg-primary: #0c0f15;
-                --bg-secondary: #14181f;
-                --bg-glass: rgba(20, 24, 31, 0.65);
-                --bg-glass-hover: rgba(30, 36, 46, 0.80);
-                --border-glass: rgba(255, 255, 255, 0.08);
-                --text-primary: #f1f5f9;
-                --text-secondary: #cbd5e1;
-                --text-muted: #94a3b8;
-                --shadow-color: rgba(0, 0, 0, 0.30);
-                --shadow-hover: rgba(153, 27, 27, 0.25);
-                --gradient-start: #0c0f15;
-                --gradient-mid: #111820;
-                --gradient-end: #0a0e14;
-                --glass-border-light: rgba(255, 255, 255, 0.06);
-                --glass-shadow-light: 0 8px 32px rgba(0, 0, 0, 0.40);
-                --card-bg: rgba(20, 24, 31, 0.60);
-                --card-border: rgba(255, 255, 255, 0.06);
-                --hero-overlay: rgba(0, 0, 0, 0.30);
-                --input-bg: rgba(30, 36, 46, 0.60);
-                --input-border: rgba(255, 255, 255, 0.06);
-                --section-divider: rgba(255, 255, 255, 0.04);
-                --testimonial-bg: rgba(20, 24, 31, 0.55);
+                /* ---------- Backgrounds — deep blue-base ---------- */
+                --bg-primary: #0a0e1a;
+                --bg-secondary: #111827;
+                --bg-glass: rgba(30, 58, 95, 0.55);
+                --bg-glass-hover: rgba(40, 75, 120, 0.75);
+                --border-glass: rgba(96, 165, 250, 0.15);
+                --card-bg: rgba(30, 58, 95, 0.45);
+                --card-border: rgba(96, 165, 250, 0.10);
+                --testimonial-bg: rgba(30, 58, 95, 0.40);
+                --input-bg: rgba(30, 58, 95, 0.50);
+                --input-border: rgba(96, 165, 250, 0.12);
+
+                /* ---------- Text — light blue-white ---------- */
+                --text-primary: #e8f0fe;
+                --text-secondary: #b6cbe8;
+                --text-muted: #7da0c9;
+
+                /* ---------- Shadows ---------- */
+                --shadow-color: rgba(0, 20, 60, 0.45);
+                --shadow-hover: rgba(59, 130, 246, 0.20);
+                --glass-shadow-light: 0 8px 32px rgba(0, 10, 40, 0.50);
+
+                /* ---------- Gradients — cool blue ---------- */
+                --gradient-start: #0a1628;
+                --gradient-mid: #0f2440;
+                --gradient-end: #060e1e;
+
+                /* ---------- Glass accents ---------- */
+                --glass-border-light: rgba(96, 165, 250, 0.08);
+                --hero-overlay: rgba(10, 22, 50, 0.50);
+
+                /* ---------- Primary — Light Blue ---------- */
+                --primary: #60A5FA;
+                --primary-dark: #3B82F6;
+                --primary-light: #93C5FD;
+                --secondary: #818CF8;
+
+                /* ---------- WhatsApp stays green but adjusted ---------- */
+                --whatsapp-green: #34D399;
+                --whatsapp-dark: #10B981;
+
+                /* ---------- Misc ---------- */
+                --section-divider: rgba(96, 165, 250, 0.06);
             }
         }
 
@@ -130,8 +159,8 @@
             position: absolute;
             inset: 0;
             z-index: 0;
-            background: radial-gradient(circle at 20% 80%, rgba(153, 27, 27, 0.03) 0%, transparent 60%),
-                radial-gradient(circle at 80% 20%, rgba(217, 119, 6, 0.02) 0%, transparent 50%);
+            background: radial-gradient(circle at 20% 80%, rgba(96, 165, 250, 0.04) 0%, transparent 60%),
+                radial-gradient(circle at 80% 20%, rgba(129, 140, 248, 0.03) 0%, transparent 50%);
             animation: liquidShimmer 12s ease-in-out infinite alternate;
         }
 
@@ -203,7 +232,7 @@
             transform: translateY(-6px);
             background: var(--bg-glass-hover);
             box-shadow: 0 16px 48px var(--shadow-hover);
-            border-color: rgba(153, 27, 27, 0.15);
+            border-color: rgba(96, 165, 250, 0.20);
         }
 
         /* ========== SCROLL ANIMATIONS ========== */
@@ -317,10 +346,10 @@
             color: var(--primary);
             font-weight: 700;
             margin-bottom: 12px;
-            background: rgba(153, 27, 27, 0.08);
+            background: rgba(96, 165, 250, 0.10);
             padding: 6px 18px;
             border-radius: 50px;
-            border: 1px solid rgba(153, 27, 27, 0.06);
+            border: 1px solid rgba(96, 165, 250, 0.08);
             backdrop-filter: blur(8px);
         }
 
@@ -380,12 +409,12 @@
         .btn-brand {
             background: var(--primary);
             color: #fff;
-            box-shadow: 0 4px 20px rgba(153, 27, 27, 0.30);
+            box-shadow: 0 4px 20px rgba(96, 165, 250, 0.30);
         }
         .btn-brand:hover {
             background: var(--primary-dark);
             transform: translateY(-2px) scale(1.02);
-            box-shadow: 0 8px 32px rgba(153, 27, 27, 0.40);
+            box-shadow: 0 8px 32px rgba(59, 130, 246, 0.40);
         }
 
         .btn-outline {
@@ -426,11 +455,6 @@
         /* ========== HEADER ========== */
         :root {
             --header-height: 80px;
-            --primary: #991B1B;
-            --primary-dark: #7F1D1D;
-            --primary-light: #FCA5A5;
-            --primary-bg: #FEF2F2;
-            --secondary: #D97706;
             --whatsapp-green: #10B981;
             --whatsapp-dark: #059669;
         }
@@ -464,23 +488,28 @@
         .logo {
             display: flex;
             align-items: center;
-            gap: 12px;
-            font-size: 1.4rem;
+            gap: 10px;
+            font-size: 1.1rem;
             font-weight: 800;
             color: var(--text-primary);
-            letter-spacing: -1px;
+            letter-spacing: -0.5px;
             text-decoration: none;
             transition: color 0.3s ease;
+            white-space: nowrap;
         }
 
         .logo i {
             color: var(--primary);
-            font-size: 1.6rem;
+            font-size: 1.5rem;
+            flex-shrink: 0;
         }
 
-        .logo span {
-            color: var(--secondary);
-            font-weight: 500;
+        .logo .brand-name {
+            color: var(--text-primary);
+            font-weight: 800;
+            font-size: 1.1rem;
+            letter-spacing: -0.5px;
+            display: inline-block;
         }
 
         .nav-links {
@@ -603,7 +632,7 @@
         .hero-card:hover .glass-icon {
             transform: scale(1.08) rotate(-4deg);
             border-color: var(--primary);
-            box-shadow: 0 8px 24px rgba(153, 27, 27, 0.12);
+            box-shadow: 0 8px 24px rgba(96, 165, 250, 0.15);
         }
 
         .hero-card h3 {
@@ -667,7 +696,7 @@
         .about-feature-item:hover {
             background: var(--bg-glass-hover);
             transform: translateY(-2px);
-            border-color: rgba(153, 27, 27, 0.12);
+            border-color: rgba(96, 165, 250, 0.15);
         }
 
         .about-feature-item .glass-icon-sm {
@@ -803,7 +832,7 @@
             background: var(--primary);
             color: #fff;
             border-color: var(--primary);
-            box-shadow: 0 4px 20px rgba(153, 27, 27, 0.25);
+            box-shadow: 0 4px 20px rgba(96, 165, 250, 0.25);
         }
 
         .search-row {
@@ -826,7 +855,7 @@
 
         .search-box:focus-within {
             border-color: var(--primary);
-            box-shadow: 0 0 0 4px rgba(153, 27, 27, 0.08);
+            box-shadow: 0 0 0 4px rgba(96, 165, 250, 0.12);
         }
 
         .search-box i {
@@ -910,7 +939,7 @@
         .zoom-overlay {
             position: absolute;
             inset: 0;
-            background: rgba(15, 23, 42, 0.20);
+            background: rgba(10, 22, 50, 0.30);
             backdrop-filter: blur(4px);
             display: flex;
             align-items: center;
@@ -1002,7 +1031,7 @@
             background: var(--primary);
             color: #fff;
             border-color: var(--primary);
-            box-shadow: 0 4px 20px rgba(153, 27, 27, 0.25);
+            box-shadow: 0 4px 20px rgba(96, 165, 250, 0.25);
             transform: translateY(-2px);
         }
 
@@ -1066,7 +1095,7 @@
 
         /* ========== CTA BANNER ========== */
         .cta-banner {
-            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+            background: linear-gradient(135deg, #1a2a4a 0%, #0f1f3a 100%);
             padding: 88px 0;
             text-align: center;
             position: relative;
@@ -1079,8 +1108,8 @@
             content: '';
             position: absolute;
             inset: 0;
-            background: radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.06) 0%, transparent 60%),
-                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.04) 0%, transparent 50%);
+            background: radial-gradient(circle at 20% 80%, rgba(96, 165, 250, 0.10) 0%, transparent 60%),
+                radial-gradient(circle at 80% 20%, rgba(129, 140, 248, 0.06) 0%, transparent 50%);
             animation: liquidShimmer 14s ease-in-out infinite alternate;
         }
 
@@ -1127,14 +1156,15 @@
 
         .footer-brand h3 {
             color: var(--text-primary);
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 800;
             margin-bottom: 18px;
-            letter-spacing: -1px;
+            letter-spacing: -0.5px;
         }
 
-        .footer-brand h3 span {
-            color: var(--secondary);
+        .footer-brand h3 .brand-name {
+            color: var(--text-primary);
+            font-weight: 800;
         }
 
         .footer-brand p {
@@ -1245,7 +1275,7 @@
             background: var(--primary);
             color: #fff;
             border-color: var(--primary);
-            box-shadow: 0 8px 32px rgba(153, 27, 27, 0.30);
+            box-shadow: 0 8px 32px rgba(96, 165, 250, 0.30);
         }
 
         .cart-count {
@@ -1406,7 +1436,7 @@
         .cart-overlay {
             position: fixed;
             inset: 0;
-            background: rgba(15, 23, 42, 0.30);
+            background: rgba(10, 22, 50, 0.50);
             backdrop-filter: blur(8px);
             z-index: 1005;
             display: none;
@@ -1420,7 +1450,7 @@
         .lightbox-overlay {
             position: fixed;
             inset: 0;
-            background: rgba(15, 23, 42, 0.80);
+            background: rgba(10, 22, 50, 0.85);
             backdrop-filter: blur(20px);
             z-index: 3000;
             display: none;
@@ -1518,6 +1548,18 @@
                 padding: 8px 16px;
                 font-size: 0.78rem;
             }
+
+            .logo {
+                font-size: 0.95rem;
+                gap: 8px;
+            }
+            .logo .brand-name {
+                font-size: 0.95rem;
+            }
+            .logo i {
+                font-size: 1.2rem;
+            }
+
             .hero {
                 padding: 80px 0 64px;
                 min-height: auto;
@@ -1557,9 +1599,59 @@
             .filter-btn {
                 text-align: center;
             }
+
             .product-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 12px;
             }
+
+            .product-card .product-image-wrapper {
+                height: 120px;
+            }
+            .product-card .product-details {
+                padding: 12px 10px 14px;
+            }
+            .product-card .product-title {
+                font-size: 0.75rem;
+                margin-bottom: 4px;
+            }
+            .product-card .product-desc {
+                font-size: 0.6rem;
+                margin-bottom: 8px;
+                line-height: 1.3;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+            .product-card .product-meta {
+                flex-wrap: wrap;
+                gap: 4px;
+            }
+            .product-card .product-code {
+                font-size: 0.55rem;
+                padding: 2px 6px;
+            }
+            .product-card .btn-add-quote {
+                font-size: 0.6rem;
+                padding: 6px 4px;
+                gap: 4px;
+            }
+            .product-card .btn-add-quote i {
+                font-size: 0.6rem;
+            }
+            .product-badge {
+                font-size: 0.5rem;
+                padding: 2px 8px;
+                top: 6px;
+                left: 6px;
+            }
+            .zoom-overlay i {
+                width: 28px;
+                height: 28px;
+                font-size: 0.8rem;
+            }
+
             .stat-card .number {
                 font-size: 2.4rem;
             }
@@ -1584,6 +1676,30 @@
             }
             .cta-banner h2 {
                 font-size: 1.6rem;
+            }
+
+            .logo {
+                font-size: 0.7rem;
+                gap: 4px;
+            }
+            .logo .brand-name {
+                font-size: 0.7rem;
+            }
+            .logo i {
+                font-size: 0.9rem;
+            }
+
+            .catalog-controls {
+                padding: 16px;
+                gap: 12px;
+            }
+            .search-box input {
+                font-size: 0.8rem;
+                padding: 8px 10px;
+            }
+            .filter-btn {
+                font-size: 0.7rem;
+                padding: 6px 12px;
             }
         }
 
@@ -1615,7 +1731,8 @@
     <header class="header" id="header">
         <div class="container">
             <a href="#" class="logo">
-                <i class="fa-solid fa-graduation-cap"></i> YASSIN <span>ENTERPRISE</span>
+                <i class="fa-solid fa-house-chimney"></i>
+                <span class="brand-name">YASSIN FURNITURE &amp; HOUSEHOLD SUPPLY</span>
             </a>
 
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">
@@ -1625,7 +1742,7 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#products">Campus Shop</a></li>
+                <li><a href="#products">Shop</a></li>
                 <li><a href="#testimonials">Reviews</a></li>
             </ul>
 
@@ -1641,16 +1758,17 @@
     <section class="hero liquid-bg" id="home">
         <div class="container">
             <div class="hero-content reveal">
-                <span class="section-label">🏠 Campus Living Essentials</span>
-                <h1>Equip Your Campus Life <span>Effortlessly</span></h1>
+                <span class="section-label">🏠 Quality Home &amp; Living Essentials</span>
+                <h1>Equip Your Home &amp; Living Space <span>Effortlessly</span></h1>
                 <p>
-                    The leading student supply network in <strong>Juja Gate, Kenya</strong>. We deliver premium
-                    <strong>Furniture</strong>, durable <strong>Kitchen Utensils</strong>, and <strong>Quality Cooking Gas (All Sizes)</strong> directly to your apartments or student housing.
-                    We also buy second-hand items and provide fast electronics repair.
+                    Trusted supplier of premium <strong>Furniture</strong>, durable <strong>Kitchen Utensils</strong>, and
+                    <strong>Quality Cooking Gas (All Sizes)</strong> — delivered directly to your doorstep in
+                    <strong>Juja Gate C., Kenya</strong> and beyond. We also buy second-hand items and provide fast electronics repair.
+                    Serving individuals, families, and businesses with excellence.
                 </p>
                 <div class="btn-group">
                     <a href="#products" class="btn btn-brand">
-                        <i class="fas fa-store"></i> Shop Student Essentials
+                        <i class="fas fa-store"></i> Explore Our Collection
                     </a>
                     <a href="#about" class="btn btn-outline">
                         <i class="fa-solid fa-circle-info"></i> Learn More
@@ -1660,23 +1778,23 @@
             <div class="hero-cards-grid stagger-children">
                 <div class="hero-card glass-card">
                     <div class="glass-icon"><i class="fa-solid fa-chair"></i></div>
-                    <h3>Study & Apartment Furniture</h3>
-                    <p>Executive desks, ergonomic chairs, and premium seating for long study sessions.</p>
+                    <h3>Quality Furniture</h3>
+                    <p>Elegant desks, comfortable seating, and premium living room pieces for every home and office.</p>
                 </div>
                 <div class="hero-card glass-card">
                     <div class="glass-icon"><i class="fa-solid fa-kitchen-set"></i></div>
-                    <h3>Student Kitchenware</h3>
-                    <p>Heavy-duty utensils, high-carbon knives, and industrial mixing bowls for apartment cooking.</p>
+                    <h3>Kitchen &amp; Dining</h3>
+                    <p>Heavy-duty utensils, cookware sets, and stylish dining essentials for everyday use.</p>
                 </div>
                 <div class="hero-card glass-card">
                     <div class="glass-icon"><i class="fa-solid fa-fire"></i></div>
                     <h3>Cooking Gas (All Sizes)</h3>
-                    <p>Reliable 6kg, 13kg, and 50kg LPG cylinders — bulk supply for student apartments.</p>
+                    <p>Reliable 6kg, 13kg, and 50kg LPG cylinders — bulk supply for homes, apartments, and businesses.</p>
                 </div>
                 <div class="hero-card glass-card">
                     <div class="glass-icon"><i class="fa-solid fa-truck-fast"></i></div>
-                    <h3>Bulk Student Distribution</h3>
-                    <p>Coordinated supply tracks across Juja, Thika, and Nairobi regions on scheduled rotations.</p>
+                    <h3>Fast &amp; Reliable Delivery</h3>
+                    <p>Coordinated logistics covering Juja Gate C., Thika, and Nairobi on regular schedules.</p>
                 </div>
             </div>
         </div>
@@ -1687,40 +1805,43 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-text reveal-left">
-                    <span class="section-label">🎓 Built for Students</span>
-                    <h3>Your Campus Living <span>Partner</span></h3>
+                    <span class="section-label">🏡 Your Home &amp; Living Partner</span>
+                    <h3>Quality Supplies for <span>Every Household</span></h3>
                     <p>
-                        YASSIN ENTERPRISE understands the unique needs of university life. We provide high-quality, affordable essentials to make your campus experience comfortable and productive.
+                        YASSIN FURNITURE AND HOUSEHOLD SUPPLY is dedicated to providing high-quality, affordable home essentials
+                        that make everyday living comfortable, functional, and stylish. Whether you are furnishing a new home,
+                        upgrading your kitchen, or stocking up on cooking gas, we have you covered.
                     </p>
                     <p>
-                        By optimizing bulk purchasing from direct manufacturers, we ensure that student apartments, campus retail hubs, and shared housing maintain constant supplies and reliable equipment.
+                        By leveraging bulk purchasing and direct manufacturer relationships, we ensure that homes, apartments,
+                        and businesses across Kenya enjoy consistent supply, competitive pricing, and exceptional service.
                     </p>
                     <div class="about-features stagger-children">
                         <div class="about-feature-item glass-card">
                             <div class="glass-icon-sm"><i class="fa-solid fa-hand-holding-heart"></i></div>
                             <div>
-                                <h4>Student-Friendly Pricing</h4>
-                                <p>Dynamic volume discounts allowing students and campus shops to capture strong margins.</p>
+                                <h4>Affordable Pricing</h4>
+                                <p>Competitive rates with volume discounts for households, landlords, and businesses.</p>
                             </div>
                         </div>
                         <div class="about-feature-item glass-card">
                             <div class="glass-icon-sm"><i class="fa-solid fa-clock"></i></div>
                             <div>
-                                <h4>Fast Campus Delivery</h4>
-                                <p>Quick and reliable delivery to student housing, campus centers, and apartments.</p>
+                                <h4>Fast &amp; Reliable Delivery</h4>
+                                <p>Prompt delivery to homes, apartments, offices, and commercial spaces across the region.</p>
                             </div>
                         </div>
                         <div class="about-feature-item glass-card">
                             <div class="glass-icon-sm"><i class="fa-solid fa-repeat"></i></div>
                             <div>
-                                <h4>Buy & Repair Services</h4>
-                                <p>We purchase second-hand items and repair electronics while you study.</p>
+                                <h4>Buy &amp; Repair Services</h4>
+                                <p>We purchase second-hand household items and offer fast electronics repair services.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="about-image reveal-right">
-                    <img src="https://i.pinimg.com/736x/12/da/65/12da653036796165385596457dec3dd5.jpg" alt="Students living together" />
+                    <img src="https://i.pinimg.com/736x/12/da/65/12da653036796165385596457dec3dd5.jpg" alt="Comfortable home living" />
                 </div>
             </div>
         </div>
@@ -1732,19 +1853,19 @@
             <div class="stats-grid stagger-children">
                 <div class="stat-card glass-card">
                     <div class="number" data-target="500">0</div>
-                    <div class="label">Happy Students Served</div>
+                    <div class="label">Happy Customers Served</div>
                 </div>
                 <div class="stat-card glass-card">
                     <div class="number" data-target="20">0</div>
-                    <div class="label">Campus Partners</div>
+                    <div class="label">Trusted Partners</div>
                 </div>
                 <div class="stat-card glass-card">
                     <div class="number" data-target="100">0</div>
-                    <div class="label">Student Essentials</div>
+                    <div class="label">Quality Products</div>
                 </div>
                 <div class="stat-card glass-card">
                     <div class="number" data-target="5">0</div>
-                    <div class="label">Years Supporting Students</div>
+                    <div class="label">Years of Service</div>
                 </div>
             </div>
         </div>
@@ -1754,16 +1875,17 @@
     <section class="products liquid-bg" id="products">
         <div class="container">
             <div style="text-align: center;">
-                <span class="section-label">🛍️ Student Shop</span>
-                <h2 class="section-title">Campus Living <span>Essentials</span></h2>
+                <span class="section-label">🛍️ Our Collection</span>
+                <h2 class="section-title">Home &amp; Living <span>Essentials</span></h2>
                 <p class="section-subtitle">
-                    Select your bulk requirements below. Add products to your aggregated Quote Basket and instantly generate structured request documents.
+                    Browse our curated selection of quality furniture, kitchenware, electronics, and more.
+                    Add items to your basket and send a consolidated request directly via WhatsApp.
                 </p>
             </div>
 
             <div class="catalog-controls glass-card reveal">
                 <ul class="filter-tabs">
-                    <li><button class="filter-btn active" data-filter="all">All Inventory</button></li>
+                    <li><button class="filter-btn active" data-filter="all">All Products</button></li>
                     <li><button class="filter-btn" data-filter="furniture">Furniture</button></li>
                     <li><button class="filter-btn" data-filter="bedding">Bedding</button></li>
                     <li><button class="filter-btn" data-filter="electronics">Electronics</button></li>
@@ -1773,7 +1895,7 @@
                 <div class="search-row">
                     <div class="search-box">
                         <i class="fas fa-search"></i>
-                        <input type="text" id="searchInput" placeholder="Search for desks, mattresses, speakers, or anything you need..." />
+                        <input type="text" id="searchInput" placeholder="Search for desks, mattresses, cookware, speakers, and more..." />
                     </div>
                 </div>
             </div>
@@ -1788,41 +1910,41 @@
     <section class="testimonials liquid-bg" id="testimonials">
         <div class="container">
             <div style="text-align: center;">
-                <span class="section-label">💬 Student Voices</span>
-                <h2 class="section-title">What Students Are <span>Saying</span></h2>
-                <p class="section-subtitle">Read how our supply-chain infrastructure supports student living and campus commerce.</p>
+                <span class="section-label">💬 What Our Customers Say</span>
+                <h2 class="section-title">Real Feedback from <span>Real People</span></h2>
+                <p class="section-subtitle">Hear from satisfied customers who trust us for their home and living needs.</p>
             </div>
             <div class="testimonial-grid stagger-children">
                 <div class="testimonial-card glass-card">
                     <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="testimonial-quote">"The study desk and chair combo arrived just in time for my exams. Solid build, great price, and delivery to my apartment was smooth. Highly recommend YASSIN!"</p>
+                    <p class="testimonial-quote">"The study desk and chair combo arrived just in time for my work-from-home setup. Solid build, great price, and delivery was smooth. Highly recommend YASSIN!"</p>
                     <div class="client-info">
                         <img class="client-avatar" src="https://i.pinimg.com/736x/f8/cc/9c/f8cc9c55847905ecd725f3858ab52dad.jpg" alt="Peter Kamau" />
                         <div>
                             <div class="client-name">Peter Kamau</div>
-                            <div class="client-role">Final Year, Juja Campus</div>
+                            <div class="client-role">Juja Gate C., Kenya</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card glass-card">
                     <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="testimonial-quote">"We outfitted our entire student apartment with YASSIN furniture and kitchenware. The quality is top-notch, and the bulk pricing really helped our student budget."</p>
+                    <p class="testimonial-quote">"We furnished our entire apartment with YASSIN furniture and kitchenware. The quality is top-notch, and the bulk pricing really helped our budget."</p>
                     <div class="client-info">
                         <img class="client-avatar" src="https://i.pinimg.com/736x/73/4b/4b/734b4bb055f6b60e196f121a01b81cc9.jpg" alt="Grace Muthoni" />
                         <div>
                             <div class="client-name">Grace Muthoni</div>
-                            <div class="client-role">Engineering Student, Thika</div>
+                            <div class="client-role">Thika, Kenya</div>
                         </div>
                     </div>
                 </div>
                 <div class="testimonial-card glass-card">
                     <div class="rating"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                    <p class="testimonial-quote">"Getting a quality mattress and bed frame for my room was a game-changer. YASSIN's delivery team set it up right in my apartment. Exceptional service!"</p>
+                    <p class="testimonial-quote">"Getting a quality mattress and bed frame for my new home was a game-changer. The delivery team set it up right in my apartment. Exceptional service!"</p>
                     <div class="client-info">
                         <img class="client-avatar" src="https://i.pinimg.com/736x/25/d4/d5/25d4d58fc5afe3b4a9cabcd589ffb94d.jpg" alt="Samuel Ochieng" />
                         <div>
                             <div class="client-name">Samuel Ochieng</div>
-                            <div class="client-role">Business Student, Nairobi</div>
+                            <div class="client-role">Nairobi, Kenya</div>
                         </div>
                     </div>
                 </div>
@@ -1833,13 +1955,13 @@
     <!-- ========== CTA BANNER ========== -->
     <section class="cta-banner">
         <div class="container">
-            <h2 class="reveal">Ready to Upgrade Your Campus Life?</h2>
-            <p class="reveal" style="transition-delay:0.1s;">Initiate scalable wholesale partnerships. Maximize your campus living standards and guarantee supply line longevity.</p>
+            <h2 class="reveal">Ready to Upgrade Your Home &amp; Living Space?</h2>
+            <p class="reveal" style="transition-delay:0.1s;">Get in touch with us today for quality furniture, kitchenware, cooking gas, and more. We deliver excellence to every doorstep.</p>
             <div class="btn-group">
                 <button class="btn btn-green" onclick="toggleCart()">
-                    <i class="fa-solid fa-clipboard-list"></i> View Active Quote List
+                    <i class="fa-solid fa-clipboard-list"></i> View Your Basket
                 </button>
-                <a href="#products" class="btn btn-outline-white">Explore Catalogue</a>
+                <a href="#products" class="btn btn-outline-white">Explore Collection</a>
             </div>
         </div>
     </section>
@@ -1849,8 +1971,10 @@
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
-                    <h3>YASSIN <span>ENTERPRISE</span></h3>
-                    <p>Premium student supply networks operating across Kenya. Streamlining student furniture acquisitions, heavy industrial culinary assets, and high-quality cooking gas.</p>
+                    <h3>
+                        <span class="brand-name">YASSIN FURNITURE &amp; HOUSEHOLD SUPPLY</span>
+                    </h3>
+                    <p>Premium furniture and household supply network operating across Kenya. Streamlining home furniture acquisitions, industrial-grade culinary assets, and high-quality cooking gas for homes and businesses.</p>
                     <div class="footer-socials">
                         <a href="#" class="footer-social-icon"><i class="fab fa-facebook-f"></i></a>
                         <a href="#" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
@@ -1858,26 +1982,27 @@
                     </div>
                 </div>
                 <div>
-                    <h4 class="footer-heading">Procurement Paths</h4>
+                    <h4 class="footer-heading">Shop by Category</h4>
                     <ul class="footer-links">
-                        <li><a href="#home">Executive Desk</a></li>
-                        <li><a href="#about">Logistics Infrastructure</a></li>
-                        <li><a href="#products">Inventory Hub</a></li>
-                        <li><a href="#testimonials">Partner Reviews</a></li>
+                        <li><a href="#products">Furniture</a></li>
+                        <li><a href="#products">Bedding</a></li>
+                        <li><a href="#products">Electronics</a></li>
+                        <li><a href="#products">Kitchenware</a></li>
+                        <li><a href="#products">Appliances</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="footer-heading">Support & Intake</h4>
+                    <h4 class="footer-heading">Contact &amp; Support</h4>
                     <ul class="footer-links">
-                        <li><i class="fas fa-map-pin"></i> Juja Gate, Kenya</li>
+                        <li><i class="fas fa-map-pin"></i> Juja Gate C., Kenya</li>
                         <li><i class="fas fa-phone"></i> +254 113 330 558</li>
-                        <li><i class="fas fa-envelope"></i> logistics@yassinenterprise.co.ke</li>
+                        <li><i class="fas fa-envelope"></i> info@yassinfurniture.co.ke</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Yassin Enterprise. All Rights Reserved.</p>
-                <p>Student Operations Hub &bull; Powered by Instant WA Quote Engine</p>
+                <p>&copy; 2026 YASSIN FURNITURE AND HOUSEHOLD SUPPLY. All Rights Reserved.</p>
+                <p>Premium Home &amp; Living Essentials &bull; Powered by WhatsApp Quote Engine</p>
             </div>
         </div>
     </footer>
@@ -1898,13 +2023,13 @@
         <div class="drawer-content" id="drawerContent">
             <div class="empty-cart-message">
                 <i class="fa-solid fa-basket-shopping"></i>
-                <p>Your procurement basket is currently empty. Add bulk items to initiate a quote.</p>
+                <p>Your basket is currently empty. Add items to build your quote.</p>
             </div>
         </div>
         <div class="drawer-footer">
-            <p>All items above will be structured automatically into a detailed B2B purchase request before redirecting to WhatsApp.</p>
+            <p>All items above will be compiled into a detailed purchase request and sent via WhatsApp.</p>
             <button class="btn btn-green" style="width:100%;" onclick="sendWholesaleRequest()">
-                <i class="fab fa-whatsapp"></i> Dispatch Aggregated Request
+                <i class="fab fa-whatsapp"></i> Send Quote Request
             </button>
         </div>
     </div>
@@ -1925,14 +2050,14 @@
                 name: 'Electric Kettle',
                 code: 'APPL-001',
                 category: 'appliances',
-                description: 'Compact 1.5L stainless steel kettle — perfect for quick ramen, coffee, and tea in your student apartment.',
+                description: 'Compact 1.5L stainless steel kettle — perfect for quick tea, coffee, and hot beverages in your kitchen.',
                 image: 'https://i.pinimg.com/736x/a2/52/53/a252532388bc19c4fe3bfe64f1c7986b.jpg'
             }, {
                 id: 2,
                 name: 'Study Desk & Chair Combo',
                 code: 'FURN-102',
                 category: 'furniture',
-                description: 'Complete study station with ergonomic chair — built for long study sessions and late-night assignments.',
+                description: 'Complete work station with ergonomic chair — built for long hours of productivity and comfort.',
                 image: 'https://i.pinimg.com/736x/48/7b/77/487b778858290b828caffd40fcffacd1.jpg'
             }, {
                 id: 3,
@@ -1953,35 +2078,35 @@
                 name: 'Portable Cooking Station',
                 code: 'FURN-313',
                 category: 'furniture',
-                description: 'Compact cooking table with built-in cylinder stand — ideal for student apartments and shared kitchens.',
+                description: 'Compact cooking table with built-in cylinder stand — ideal for apartments, outdoor kitchens, and small spaces.',
                 image: 'https://i.pinimg.com/736x/31/6a/c5/316ac5b85c0ea0238ae2a972bd747394.jpg'
             }, {
                 id: 6,
                 name: 'Shoe Rack — Space Saver',
                 code: 'FURN-421',
                 category: 'furniture',
-                description: 'Modular 3-tier shoe rack that fits perfectly in tight apartment corridors and entryways.',
+                description: 'Modular 3-tier shoe rack that fits perfectly in narrow corridors, entryways, and closets.',
                 image: 'https://i.pinimg.com/736x/a6/e7/80/a6e7807120960be9de58b4d9d84f9d09.jpg'
             }, {
                 id: 7,
                 name: 'Bluetooth Speaker',
                 code: 'ELEC-701',
                 category: 'electronics',
-                description: 'Portable high-output speaker with deep bass — perfect for hangouts, study breaks, and chill sessions.',
+                description: 'Portable high-output speaker with deep bass — perfect for parties, gatherings, and relaxation.',
                 image: 'https://i.pinimg.com/736x/e4/bb/3a/e4bb3a801cb5b45963238b37c5f75be6.jpg'
             }, {
                 id: 8,
                 name: 'Smart LED TV 43"',
                 code: 'ELEC-702',
                 category: 'electronics',
-                description: 'Crisp 43-inch smart TV with built-in streaming — for movie nights, gaming, and binge-watching with friends.',
+                description: 'Crisp 43-inch smart TV with built-in streaming — for movie nights, gaming, and family entertainment.',
                 image: 'https://i.pinimg.com/736x/81/c1/23/81c123ca3450a00a1ae8446103a37293.jpg'
             }, {
                 id: 9,
                 name: 'Sofa Bed — Guest Ready',
                 code: 'FURN-509',
                 category: 'furniture',
-                description: 'Convertible sofa bed — lounge by day, extra sleeping space for friends by night. Apartment-friendly size.',
+                description: 'Convertible sofa bed — lounge by day, extra sleeping space for guests by night. Apartment-friendly size.',
                 image: 'https://i.pinimg.com/736x/ad/80/ea/ad80ea28870f57fd907bd4290510cfa8.jpg'
             }, {
                 id: 10,
@@ -1999,31 +2124,31 @@
                 image: 'https://i.pinimg.com/webp/736x/3a/a2/62/3aa26229e8827ea90917aea3a0c030fe.webp'
             }, {
                 id: 12,
-                name: 'Wall Shelves — Study Storage',
+                name: 'Wall Shelves — Storage',
                 code: 'FURN-725',
                 category: 'furniture',
-                description: 'Set of 3 floating shelves — perfect for books, plants, and personal decor in your apartment.',
+                description: 'Set of 3 floating shelves — perfect for books, plants, and personal decor in any room.',
                 image: 'https://i.pinimg.com/webp/736x/12/43/2a/12432a3088c1c0b510e659fab57ab827.webp'
             }, {
                 id: 13,
-                name: 'Student Utensil Kit',
+                name: 'Home Utensil Kit',
                 code: 'KITCH-511',
                 category: 'kitchenware',
-                description: 'Complete 12-piece utensil set including pots, pans, and cooking tools — kitchen essentials for student living.',
+                description: 'Complete 12-piece utensil set including pots, pans, and cooking tools — kitchen essentials for everyday cooking.',
                 image: 'https://i.pinimg.com/736x/ce/ff/0b/ceff0bf751e41c7a112c343ad3505a78.jpg'
             }, {
                 id: 14,
-                name: 'WiFi Router — Faster Speed',
+                name: 'WiFi Router — High Speed',
                 code: 'ELEC-808',
                 category: 'electronics',
-                description: 'High-speed dual-band WiFi router — strong signal for seamless online classes, gaming, and streaming.',
+                description: 'High-speed dual-band WiFi router — strong signal for seamless work, streaming, and gaming.',
                 image: 'https://i.pinimg.com/736x/eb/7c/b6/eb7cb63baa55fdcbf7d142c9b26eb650.jpg'
             }, {
                 id: 15,
-                name: 'Electric Accessories',
+                name: 'Power & Charging Kit',
                 code: 'ELEC-905',
                 category: 'electronics',
-                description: 'Power bank, fast charger, and cable pack — never run out of juice during those long campus days.',
+                description: 'Power bank, fast charger, and cable pack — never run out of power during your busy day.',
                 image: 'https://i.pinimg.com/736x/e2/ac/85/e2ac8573878a0dc2e30b22b0674ce13c.jpg'
             }];
 
@@ -2050,7 +2175,7 @@
                     productGrid.innerHTML = `
                             <div style="grid-column:1/-1; text-align:center; padding:60px 0; color:var(--text-muted);">
                                 <i class="fa-solid fa-folder-open" style="font-size:3rem; margin-bottom:16px; display:block; color:var(--card-border);"></i>
-                                <p>No inventory matched your search criteria. Try modifying your filters.</p>
+                                <p>No items matched your search. Try adjusting your filters.</p>
                             </div>
                         `;
                     return;
@@ -2073,7 +2198,7 @@
                                 <p class="product-desc">${p.description}</p>
                                 <div class="product-actions">
                                     <button class="btn-add-quote" onclick="addToQuote(${p.id})">
-                                        <i class="fa-solid fa-circle-plus"></i> Add to Quote Basket
+                                        <i class="fa-solid fa-circle-plus"></i> Add to Basket
                                     </button>
                                 </div>
                             </div>
@@ -2138,7 +2263,7 @@
                     drawerContent.innerHTML = `
                             <div class="empty-cart-message">
                                 <i class="fa-solid fa-basket-shopping"></i>
-                                <p>Your procurement basket is currently empty. Add bulk items to initiate a quote.</p>
+                                <p>Your basket is currently empty. Add items to build your quote.</p>
                             </div>
                         `;
                     return;
@@ -2169,15 +2294,15 @@
             // ---------- SEND WHATSAPP REQUEST ----------
             window.sendWholesaleRequest = function() {
                 if (basket.length === 0) {
-                    alert('Please select at least one item to build a quote.');
+                    alert('Please add at least one item to your basket.');
                     return;
                 }
 
-                let message = `Hello YASSIN ENTERPRISE,\n\nI am a student looking for a bulk quote for my campus living setup:\n\n`;
+                let message = `Hello YASSIN FURNITURE AND HOUSEHOLD SUPPLY,\n\nI would like to request a quote for the following items:\n\n`;
                 basket.forEach((item, index) => {
                     message += `${index + 1}. [${item.code}] ${item.name} - (Quantity: ${item.quantity})\n`;
                 });
-                message += `\nPlease provide availability, delivery timeframes to Juja, and tiered pricing options.`;
+                message += `\nPlease provide availability, delivery timelines to my location, and pricing details.`;
 
                 const waUrl = `https://wa.me/${PHONE}?text=${encodeURIComponent(message)}`;
                 window.open(waUrl, '_blank');
